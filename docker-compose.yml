@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  streamlit-xtts2:
+    image: xtts2 #ghcr.io/jalcocert/streamlit-multichat:v1.0
+    container_name: streamlit_xtts2_audio
+    volumes:
+      - ai_streamlit_xtts:/app
+    working_dir: /app
+    command: /bin/sh -c "\
+      streamlit run app2.py" #tail -f /dev/null
+    ports:
+      - "8501:8501"
+
+volumes:
+  ai_streamlit_xtts:
+
+#docker-compose up -d
