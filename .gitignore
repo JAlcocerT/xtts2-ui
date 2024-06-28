@@ -1,3 +1,5 @@
+xtts/
+
 outputs/*
 !outputs/.placeholder
 targets/*

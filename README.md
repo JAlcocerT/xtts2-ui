@@ -1,3 +1,30 @@
+Needs Python 3.9
+
+```sh
+python -m venv xtts #create it
+
+xtts\Scripts\activate #activate venv (windows)
+source xtts/bin/activate #(linux)
+
+#deactivate #when you are done
+
+apt update
+apt install git
+#git --version
+git clone https://github.com/BoltzmannEntropy/xtts2-ui
+cd xtts2-ui
+
+#python -m venv venvaudio
+#pip3 install torch torchvision torchaudio && pip install -r requirements.txt && pip install --upgrade TTS && streamlit run app2.py
+pip3 install torch torchvision torchaudio #https://pytorch.org/get-started/locally/
+pip install -r requirements.txt
+pip install --upgrade TTS
+
+streamlit run app2.py 
+```
+
+---
+
 # XTTS-2-UI: A User Interface for XTTS-2 Text-Based Voice Cloning
 
 This repository contains the essential code for cloning any voice using just text and a 10-second audio sample of the target voice. XTTS-2-UI is simple to setup and use. [Example Results 🔊](#examples)
